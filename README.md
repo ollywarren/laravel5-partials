@@ -6,7 +6,7 @@ Includes:
  - Dropdown for Months of the Year.
  - File Upload Attachment Input.
  
- Requires:
-  - Laravel 5.3.
-  - Laravel Blade.
-  - Bootstrap 3.0 (Specifically for the file upload styles).
+Requires:
+ - Laravel 5.3.
+ - Laravel Blade.
+ - Bootstrap 3.0 (Specifically for the file upload styles).
