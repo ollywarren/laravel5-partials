@@ -21,7 +21,10 @@
         ),
 
 
-        'Northern_Ireland' => array('Antrim', 'Armagh', 'Down', 'Fermanagh', 'Londonderry', 'Tyrone')
+        'Northern_Ireland' => array('Antrim', 'Armagh', 'Down', 'Fermanagh', 'Londonderry', 'Tyrone'),
+
+        'Republic_of_Ireland' => array('Carlow', 'Cavan', 'Clare', 'Cork', 'Derry', 'Donegal', 'Dublin', 'Galway', 'Kerry', 'Kildare', 'Kilkenny', 'Laois',
+            'Leitrim', 'Limerick', 'Longford', 'Louth', 'Mayo', 'Meath', 'Monaghan', 'Offaly', 'Roscommon', 'Sligo', 'Tipperary', 'Waterford', 'Westmeath', 'Wexford', 'Wicklow')
     );
 
 
@@ -47,6 +50,11 @@
     </optgroup>
     <optgroup label="Northern Ireland">
         @foreach($counties['Northern_Ireland'] as $county)
+            <option value="{{ $county }}" {{ $default == $county ? 'selected' : '' }}>{{ $county }}</option>
+        @endforeach
+    </optgroup>
+    <optgroup label="Rep. Ireland">
+        @foreach($counties['Republic_of_Ireland'] as $county)
             <option value="{{ $county }}" {{ $default == $county ? 'selected' : '' }}>{{ $county }}</option>
         @endforeach
     </optgroup>
